@@ -25,7 +25,7 @@ func main() {
 	})
 
 	// Set the on disconnect handler
-	/*sio.On("disconnect", func(ns *socketio.NameSpace) {
+	sio.On("disconnect", func(ns *socketio.NameSpace) {
 		log.Println("Disconnected: ", ns.Id())
 		sio.Broadcast("disconnected", ns.Id())
 	})
@@ -64,7 +64,7 @@ func main() {
 	// Set an on disconnect handler for the pol channel
 	sio.Of("/pol").On("disconnect", func(ns *socketio.NameSpace) {
 		log.Println("Pol Disconnected: ", ns.Id())
-	})*/
+	})
 
 	// Serve our website
 	sio.Handle("/", http.FileServer(http.Dir("./www/")))
