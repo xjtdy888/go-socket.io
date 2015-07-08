@@ -4,7 +4,7 @@ import (
 	"runtime"
 	//"io/ioutil"
 	"encoding/json"
-	"qudao.com/tech/socket.io"
+	"github.com/xjtdy888/go-socket.io"
 	"log"
 	"net/http"
 	_ "net/http/pprof"
